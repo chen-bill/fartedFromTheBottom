@@ -8,7 +8,7 @@ Servo servo2;
 int servo1Pin = 9;
 int servo2Pin = 10;
 
-int angle = 90;
+int angle = 0;
 
 void setup()
 {
@@ -17,7 +17,7 @@ void setup()
 
   Serial.begin(9600);
 
-  servo1.write(180);
+  servo1.write(0);
   servo2.write(180);
 }
 
@@ -37,13 +37,13 @@ void action(int input){
     while(angle > 0){
       angle -= 10;
       servo1.write(angle);
-      servo2.write(angle);
+      servo2.write(180-angle);
     }
-    delay(100);
+    delay(500);
     while(angle < 180){
       angle -= 10;
       servo1.write(angle);
-      servo2.write(angle);
+      servo2.write(180-angle);
     }
   }
 }
