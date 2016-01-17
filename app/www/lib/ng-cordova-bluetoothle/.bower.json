@@ -1,0 +1,35 @@
+{
+  "name": "ng-cordova-bluetoothle",
+  "main": "./dist/ng-cordova-bluetoothle.js",
+  "description": "AngularJS Wrapper for Phonegap / Cordova Bluetooth LE Plugin",
+  "authors": [
+    "George Stocker <http://georgestocker.com>",
+    "Rand Dusing <http://www.randdusing.com>"
+  ],
+  "homepage": "http://github.com/randdusing/ng-cordova-bluetoothle",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "ng-cordova-bluetoothle",
+    "angularjs",
+    "bluetooth le",
+    "cordova",
+    "phonegap",
+    "ionic"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules"
+  ],
+  "_release": "493c9fe27b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "493c9fe27b1f93cb32c04dbb205b035d49eae3c1"
+  },
+  "_source": "https://github.com/randdusing/ng-cordova-bluetoothle.git",
+  "_target": "master",
+  "_originalSource": "https://github.com/randdusing/ng-cordova-bluetoothle.git",
+  "_direct": true
+}

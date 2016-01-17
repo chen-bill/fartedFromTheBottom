@@ -1,0 +1,35 @@
+<ion-view>
+  <ion-content class="padding" id="settingsPane">
+    <p ng-show="!$root.connected" class="connectionError"><span>!</span>Error, not connected to device</p>
+    <h2>{{$root.bluetoothAddress}}</h2>
+    <h2>Connection</h2>
+    <button class="button button-block button-positive" ng-click="initialize()">
+      Initialize
+    </button>
+    <button class="button button-block button-positive" ng-click="startScan()">
+      Search for Device
+    </button>
+    <button class="button button-block button-assertive" ng-click="stopScan()">
+      Stop Search
+    </button>
+<!--     <h2>Debugging</h2>
+    <button class="button button-block button-calm" ng-click="debugFunction()">
+      Button
+    </button> -->
+    <h4 ng-show="!$root.connected">Select device:</h4>
+    <ion-list>
+      <ion-item ng-click="connect({{device}})" ng-repeat="device in devices">
+        <div class="connections">
+          <h4>{{device.name}}</h4>
+          <p>{{device.address}}</p>
+        </div>
+        <span ng-show="{{device.address == $root.bluetoothAddress}}" class="selectedDeviceMarker">--</span>
+      </ion-item>
+    </ion-list
+
+    <h2>Debug</h2>
+    <p>
+      {{debug}}
+    </p>
+  </ion-content>
+</ion-view>
