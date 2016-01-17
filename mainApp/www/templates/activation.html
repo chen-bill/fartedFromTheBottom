@@ -1,7 +1,9 @@
-<ion-view view-title="Activation">
-  <ion-content>
-    <ion-list>
-    <h1>Activation</h1>
-    </ion-list>
+<ion-view>
+  <ion-content class="padding" id="activationPane">
+    <p ng-show="!$root.connected" class="connectionError"><span>!</span>Error, not connected to device</p>
+    <button id="theButton" class="button button-block button-assertive" ng-click="stink()">
+    	Stink
+    </button>
+    <p>{{debug}}</p>
   </ion-content>
 </ion-view>

@@ -1,1 +1,35 @@
 /* Empty. Add your own CSS if you like */
+.connectionError{
+	font-weight: bold;
+	color: red;
+}
+
+#theButton{
+	height: 50%;
+	font-size: 3em;
+}
+
+#tabContainer > div{
+	top: 5px;
+}
+
+#activationPane{
+	top: 53px;
+}
+
+#settingsPane{
+	top: 53px;
+}
+
+.connections{
+	float: left;
+}
+
+.selectedDeviceMarker{
+	color: green;
+	text-align: right;
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+	font-size: 1em;
+}
